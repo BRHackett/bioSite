@@ -30,18 +30,25 @@ h1 {
     color: red;
 }
 
+ 
 #container {
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
     padding: 10px;
+    position: relative;
+
 }
 
 footer {
     background-color:darkblue;
     position: absolute;
+    float: center ;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
+
 
 }
 
@@ -62,19 +69,40 @@ footer a:hover {
     text-decoration: underline;
 }
 
-    .container {
-        display: flex;
-        align-items: left;
-        justify-content: left
-      }
-      
-      img {
-        max-width: 25%;
-        max-height: 25%;
-      }
-      
-      .text {
-        font-size: 20px;
-        padding-left: 5px;
-        text-align: left;
-      }
+.container {
+    position: relative;
+    text-align: left; /* Center the text horizontally */
+    padding-left: 10px;
+}
+
+/* Style for the image */
+.image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle; /* Center the image vertically */
+}
+
+/* Style for the text */
+.text {
+    display: inline-block;
+    vertical-align: middle; /* Center the text vertically */
+    margin-left: 10px;
+}
+
+#aboutimg {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+   
+    vertical-align: top; /* Center the image vertically */
+    float: right ;
+}
+#hobbiesImg a {
+    white-space: nowrap;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
